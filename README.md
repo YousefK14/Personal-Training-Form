@@ -1,6 +1,6 @@
 # Personal Training Survey Form
 
-This web-based form simplifies user data collection and fitness preference gathering for personal training services.
+This web-based form simplifies user data collection and fitness preference gathering for personal training services. This project is part of the FreeCodeCamp curriculum.
 
 ## Features
 
