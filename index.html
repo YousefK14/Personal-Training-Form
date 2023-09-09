@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <h1 id="title">Personal Training Form</h1> 
+  <p id="description">Thank you for choosing our company</p>
+  <form id="survey-form" method="post">
+    <fieldset>
+      <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter Your Name" required/></label>
+      <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter Your Email" required/></label>
+      <label for="number" id="number-label">Age (Optional) <input id="number" type="number" min="13" max="100" placeholder="Age">
+      <label for="dropdown">Which option best describes your current position?
+        <select id="dropdown" name="dropdown">
+          <option value="1">Motivated</option>
+          <option value="2">Unmotivated</option>
+          <option value="3">Not sure</option>
+      </label>
+      </fieldset>
+      <fieldset>
+      <label for="week-training"><input id="week-training" type="radio" name="train" value="week" class="inline">Weekly Sessions</label>
+      <label for="daily-training"><input id="daily-training" type="radio" name="train" value="daily" class="inline">Daily Sessions</label>
+      <label for="bodybuild"><input class="inline" id="bodybuild" type="checkbox" value="1">Bodybuilding Training</label>
+      <label for="powerlift"><input class="inline" id="powerlift" type="checkbox" value="2">Powerlifing Training</label>
+      <label for "text" class="comment">Any comments or suggestions?<textarea></textarea></label>
+      <input type="submit" id="submit" value="submit">
+    </fieldset>
+  </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body {
+  background-color: grey;
+}
+h1, p {
+  text-align: center;
+}
+form {
+  width: 90%;
+  margin: auto;
+}
+input, select, textarea {
+  width: 100%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.comment {
+  margin-top: 10px;
+}
+label {
+  display: block;
+}
+.inline {
+  width: unset;
+}
+input[type="submit"] {
+  margin: 7px auto;
+  height: 30px;
+  background-color: black;
+  color: white;
+}
