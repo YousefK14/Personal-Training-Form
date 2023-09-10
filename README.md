@@ -16,5 +16,6 @@ This web-based form simplifies user data collection and fitness preference gathe
 
 The form streamlines communication with potential clients, enabling the creation of tailored fitness programs.
 
-
+## License
+This project is licensed under the MIT License.
 **This project is part of the FreeCodeCamp curriculum.**
