@@ -8,22 +8,29 @@
 <body>
   <h1 id="title">Personal Training Form</h1> 
   <p id="description">Thank you for choosing our company</p>
+  
   <form id="survey-form" method="post" action="/submit">
     <fieldset>
+      <legend>Your Personal Information</legend>
+
       <label for="fName" id="name-label">First Name:</label>
-      <input id="fName" type="text" placeholder="Enter Your First Name" required/>
+      <input id="fName" type="text" placeholder="Enter Your First Name" name="fName" required/>
 
       <label for="lName" id="name-label">Last Name:</label>
-      <input id="lName" type="text" placeholder="Enter Your Last Name" required/>
+      <input id="lName" type="text" placeholder="Enter Your Last Name" name="lName" required/>
 
-      <label for="email" id="email-label">Email</label>
-      <input id="email" type="email" placeholder="Enter Your Email" required/>
+      <label for="email" id="email-label">Email:</label>
+      <input id="email" type="email" placeholder="Enter Your Email" name="email" required/>
 
-      <label for="number" id="number-label">Age (Optional)</label>
-      <input id="number" type="number" min="13" max="100" placeholder="Enter Your Age"/>
+      <label for="number" id="number-label">Age (Optional):</label>
+      <input id="number" type="number" min="13" max="100" placeholder="Enter Your Age" name="age" />
+    </fieldset>
 
+    <fieldset>
+      <legend>Position</legend>
       <label for="dropdown">Which option best describes your current position?</label>
-      <select id="dropdown" name="dropdown">
+      <select id="dropdown" name="dropdown" required>
+        <option value="" disabled selected>Select your position</option>
         <option value="1">Motivated</option>
         <option value="2">Unmotivated</option>
         <option value="3">Not sure</option>
@@ -39,10 +46,10 @@
         <input id="daily-training" type="radio" name="train" value="daily" class="inline">Daily Sessions
       </label>
       <label for="bodybuild">
-        <input class="inline" id="bodybuild" type="checkbox" name="training" value="1">Bodybuilding Training
+        <input class="inline" id="bodybuild" type="checkbox" name="training" value="Bodybuilding">Bodybuilding Training
       </label>
       <label for="powerlift">
-        <input class="inline" id="powerlift" type="checkbox" name="training" value="2">Powerlifting Training
+        <input class="inline" id="powerlift" type="checkbox" name="training" value="Powerlifting">Powerlifting Training
       </label>
     </fieldset>
 

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Response</title>
+  <link rel="stylesheet" href="/styles/styles.css"/>
+</head>
+<body>
+  <h1>Thank You for Your Submission!</h1>
+  <p>Thank you, <%= firstName %> <%= lastName %>! Your response has been recorded and will be outputted below!</p>
+  
+  <h2>Your Submitted Data:</h2>
+  <ul>
+    <li><strong>First Name:</strong> <%= firstName %></li>
+    <li><strong>Last Name:</strong> <%= lastName %></li>
+    <li><strong>Email:</strong> <%= email %></li>
+    <li><strong>Age:</strong> <%= age %></li>
+    <li><strong>Position:</strong> <%= position %></li>
+
+    <li><strong>Comments:</strong> <%= comments %></li>
+  </ul>
+
+  <a href="/">Back to Form</a>
+</body>
+</html>
